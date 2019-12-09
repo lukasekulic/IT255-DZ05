@@ -6,14 +6,12 @@ import { AppComponent } from '../app.component';
 })
 export class FilterPipePipe implements PipeTransform {
 
-  
-
   transform(items: any[], price: number): any {
-    if(!items) return [];
-    if(!price) return items;
-    return items.filter( it => {
+    if (!items) return [];
+    if (!price) return items;
+    return items.filter(it => {
       return it.cena <= price;
-      });
+    });
   }
 
 }

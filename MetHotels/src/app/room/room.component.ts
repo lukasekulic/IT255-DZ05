@@ -25,6 +25,11 @@ export class RoomComponent implements OnInit {
     this.updateRoom.emit(this.soba);
   }
 
+  public getPrice(numberOfNights: number, cena, brojsoba) {
+    numberOfNights = ((cena * brojsoba))
+    return numberOfNights;
+  }
+
   ngOnInit() {
   }
 }

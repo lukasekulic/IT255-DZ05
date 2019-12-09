@@ -2,6 +2,8 @@
      <div>
           <h4>Soba: {{soba.tip}}</h4>
           <p>Cena: {{soba.cena}}€</p>
+          <p>Nocenja: {{soba.brojnoci}} dan(a)</p>
+          <p>Ukupna Cena: {{soba.getPrice(cena, brojnoci)}}€</p>
           <div>
                <a href="#" (click)="changeContent()" class="btn btn-primary">IZMENI</a>
                <a href="#" (click)="deleteRoom()" class="btn btn-danger">OBRISI</a>
